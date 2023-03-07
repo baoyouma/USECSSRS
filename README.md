@@ -5,4 +5,4 @@ Use the CSSRS method for sandstone CTS data, which can be implemented according 
 Zegen Wang(),GuoLi Ma()
 
 # Acknowledgements
-Some of the code for RSIMDCL in this repository has been collected and modified from https://github.com/JunlinHan/DCLGAN.
+Some of the code for RSIMDCL in this repository is collected and modified from https://github.com/JunlinHan/DCLGAN.
