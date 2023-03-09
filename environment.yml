@@ -1,4 +1,4 @@
-name: dclgan
+name: rdclgan
 channels:
 - pytorch
 - defaults
