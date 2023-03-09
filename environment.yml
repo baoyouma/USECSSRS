@@ -1,4 +1,4 @@
-name: rdclgan
+name: CSSRS/rdclgan
 channels:
 - pytorch
 - defaults
