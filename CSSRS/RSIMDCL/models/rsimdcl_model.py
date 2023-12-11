@@ -16,7 +16,7 @@ class RSIMDCLModel(BaseModel):
     def modify_commandline_options(parser, is_train=True):
         """  Configures options specific for RSIMDCL.
         """
-        parser.add_argument('--DCL_mode', type=str, default="RSIM", choices='RSIM')
+        parser.add_argument('--RSIMDCL_mode', type=str, default="RSIM", choices='RSIM')
         parser.add_argument('--lambda_GAN', type=float, default=1.0, help='weight for GAN loss：GAN(G(X))')
         parser.add_argument('--lambda_NCE', type=float, default=2.0, help='weight for NCE loss: NCE(G(X), X)')
         parser.add_argument('--lambda_SIM', type=float, default=10.0, help='weight for NCE loss: NCE(G(X), X)')
@@ -40,10 +40,10 @@ class RSIMDCLModel(BaseModel):
         opt, _ = parser.parse_known_args()
 
         # Set default parameters for RSIMDCL.
-        if opt.DCL_mode.lower() == "rsim":
+        if opt.RSIMDCL_mode.lower() == "rsim":
             parser.set_defaults(nce_idt=True, lambda_NCE=2.0)
         else:
-            raise ValueError(opt.DCL_mode)
+            raise ValueError(opt.RSIMDCL_mode)
 
         return parser
 
